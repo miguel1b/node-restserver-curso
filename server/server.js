@@ -19,7 +19,7 @@ app.post('/usuario', (req, res) => {
     if (body.nombre === undefined) {
         res.status(400).json({
             ok: false,
-            mensaje: "El campo nombre es obligatorio"
+            mensaje: "El campo nombre es requerido"
         })
 
     } else {
